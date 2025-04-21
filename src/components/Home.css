@@ -1,0 +1,100 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main container for the Home page */
+  .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f4f4f9; /* Light background */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    color: #333; /* Dark text color for good contrast */
+    padding: 20px;
+  }
+  
+  /* Content section to center the text */
+  .home-content {
+    max-width: 800px; /* Limit the width for better readability */
+    text-align: center;
+    background-color: white; /* White background for the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    padding: 40px;
+  }
+  
+  /* Main title */
+  .home-title {
+    font-size: 2.5rem;
+    color: #2c3e50; /* Darker color for the title */
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  /* Description text */
+  .home-description {
+    font-size: 1.2rem;
+    color: #7f8c8d; /* Lighter text color */
+    margin-bottom: 30px;
+  }
+  
+  /* Skills section */
+  .skills-section {
+    margin-top: 40px;
+  }
+  
+  /* Skills section title */
+  .skills-title {
+    font-size: 1.8rem;
+    color: #2980b9; /* Accent color for the skills title */
+    margin-bottom: 20px;
+  }
+  
+  /* Skill list */
+  .skills-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Individual skills list items */
+  .skills-list li {
+    font-size: 1.2rem;
+    color: #34495e; /* Slightly dark color for list items */
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  /* Add a small icon to each skill */
+  .skills-list li::before {
+    content: '•'; /* Bullet point */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    color: #2980b9; /* Accent color */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .home-title {
+      font-size: 2rem;
+    }
+  
+    .home-description {
+      font-size: 1rem;
+    }
+  
+    .skills-title {
+      font-size: 1.5rem;
+    }
+  
+    .skills-list li {
+      font-size: 1rem;
+    }
+  }
+  
