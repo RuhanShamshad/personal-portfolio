@@ -36,3 +36,279 @@
     transform: rotate(360deg);
   }
 }
+/* Projects Container */
+.projects-scroll {
+  display: flex;
+  justify-content: center; /* Centers the project cards */
+  flex-wrap: wrap; /* Allows wrapping of cards if screen is smaller */
+  gap: 20px;
+  padding: 40px;
+  margin-top: 50px;
+  max-width: 1200px; /* Limiting max width for larger screens */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Project Card */
+.project-card {
+  flex: 0 0 calc(33% - 20px); /* Ensures 3 cards per row, with spacing */
+  min-width: 280px; /* Prevents card from becoming too small */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Card hover effect */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Title */
+.project-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Project Description */
+.project-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* GitHub Link */
+.project-card a {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #0073e6;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: #005bb5; /* Hover effect on GitHub link */
+  color: #fff;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .project-card {
+    flex: 0 0 calc(50% - 20px); /* 2 cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    flex: 0 0 100%; /* 1 card per row on mobile */
+  }
+}
+
+/* Blog Container */
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Blog Title */
+.blog-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Email Link */
+.blog a {
+  font-size: 10px;
+  color: #0073e6;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 2px solid #0073e6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for email link */
+.blog a:hover {
+  background-color: #0073e6;
+  color: #fff;
+  border-color: #005bb5;
+}
+
+/* Optional for responsiveness */
+@media (max-width: 768px) {
+  .blog-title {
+    font-size: 30px;
+  }
+
+  .blog a {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
+/* Blog Container */
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  min-height: 100vh; /* Ensures content takes up at least the full height */
+  padding: 60px 20px; /* Adding padding to ensure no content is cut off */
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Blog Title */
+.blog-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px; /* Adjusted margin for better spacing */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px; /* Spacing between categories and post list */
+}
+
+.category-btn {
+  background-color: #fff;
+  border: 2px solid #0073e6;
+  color: #0073e6;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.category-btn:hover {
+  background-color: #0073e6;
+  color: #fff;
+}
+
+.category-btn.active {
+  background-color: #0073e6;
+  color: #fff;
+}
+
+/* Post List */
+.post-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  max-width: 1000px; /* Ensures the post list doesn't stretch too wide */
+}
+
+.post-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.post-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.post-excerpt {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.post-date {
+  font-size: 14px;
+  color: #888;
+}
+
+.read-more-link {
+  font-size: 16px;
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+/* No Posts Found Message */
+.no-posts {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Optional: Responsive Design */
+@media (max-width: 768px) {
+  .blog-title {
+    font-size: 28px;
+  }
+
+  .category-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .post-item {
+    padding: 15px;
+  }
+
+  .post-title {
+    font-size: 20px;
+  }
+
+  .post-excerpt {
+    font-size: 14px;
+  }
+
+  .read-more-link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .navbar-list li {
+    margin: 10px 27px 5px 0 !important;
+  }
+  .blog {
+    padding: 10rem;
+    max-width: 800px;
+    margin: auto;
+    font-family: "Segoe UI", sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+}

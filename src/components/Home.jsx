@@ -1,12 +1,14 @@
-import React from 'react';
-import './Home.css';
+import React from "react";
+import "./Home.css";
 
 const Home = () => {
   return (
     <div className="home-container">
       <div className="home-content">
         <h1 className="home-title">Hi, I'm Ruhan Shamshad</h1>
-        <p className="home-description">I'm a Frontend Developer. Welcome to my portfolio!</p>
+        <p className="home-description">
+          I'm a Frontend Developer. Welcome to my portfolio!
+        </p>
         <section className="skills-section">
           <h2 className="skills-title">My Skills</h2>
           <ul className="skills-list">
