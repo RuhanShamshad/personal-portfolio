@@ -345,7 +345,6 @@ body {
   margin-top: 25px;
 }
 
-/* Header section */
 .contact-container {
   text-align: center;
   margin-bottom: 2rem;
@@ -363,7 +362,6 @@ body {
   color: #dddddd;
 }
 
-/* Form section */
 .container-2 {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
@@ -374,7 +372,6 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Form elements */
 form input,
 form textarea {
   width: 100%;
@@ -399,7 +396,6 @@ form textarea:focus {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Submit button */
 form button {
   width: 100%;
   padding: 1rem;

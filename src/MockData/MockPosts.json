@@ -1,43 +1,42 @@
 [
-    {
-      "id": "1",
-      "title": "Getting Started with React",
-      "excerpt": "A beginner's guide to building UIs with React.js.",
-      "content": "React is a JavaScript library for building user interfaces. This post will walk you through the basics...",
-      "category": "Frontend",
-      "date": "2024-09-01T00:00:00Z"
-    },
-    {
-      "id": "2",
-      "title": "Understanding REST APIs",
-      "excerpt": "Learn how REST APIs work and how to consume them.",
-      "content": "REST APIs are a standard for communication between client and server. This blog will cover...",
-      "category": "Backend",
-      "date": "2024-08-12T00:00:00Z"
-    },
-    {
-      "id": "3",
-      "title": "Why Firebase is Great for Web Apps",
-      "excerpt": "Explore Firebase features for web development like Firestore, Auth, and Hosting.",
-      "content": "Firebase is a powerful platform for web and mobile apps. In this post, we’ll look at Firestore, Firebase Auth, and more...",
-      "category": "Tech",
-      "date": "2024-07-21T00:00:00Z"
-    },
-    {
-      "id": "4",
-      "title": "Deploy Your Website with Vercel",
-      "excerpt": "Simple guide to deploying frontend projects using Vercel.",
-      "content": "Vercel is an easy-to-use platform to host your frontend apps. Let's go through step-by-step deployment...",
-      "category": "Frontend",
-      "date": "2024-07-30T00:00:00Z"
-    },
-    {
-      "id": "5",
-      "title": "Node.js Basics for Beginners",
-      "excerpt": "Understand the fundamentals of Node.js and server-side JavaScript.",
-      "content": "Node.js lets you run JavaScript on the server. This article introduces you to core modules, npm, and creating a basic server...",
-      "category": "Backend",
-      "date": "2024-09-15T00:00:00Z"
-    }
-  ]
-  
+  {
+    "id": "1",
+    "title": "Getting Started with React",
+    "excerpt": "A beginner's guide to building UIs with React.js.",
+    "content": "React is a popular JavaScript library developed by Facebook for building user interfaces. It allows developers to create large web applications that can update and render efficiently in response to data changes.\n\nOne of React's core concepts is the component-based architecture. Instead of writing one big HTML file, React encourages breaking the UI into reusable pieces called components. These components can manage their own state and be composed to build complex UIs.\n\nReact uses a virtual DOM to optimize rendering performance. When data changes, React updates only the components that need re-rendering, making applications fast and responsive.\n\nTo get started with React, you can use Create React App:\n```bash\nnpx create-react-app my-app\ncd my-app\nnpm start\n```\n\nThis command sets up a development environment with everything you need: React, Webpack, Babel, and more.\n\nReact also supports JSX — a syntax extension that lets you write HTML-like code inside JavaScript:\n```jsx\nconst Welcome = () => <h1>Hello, React!</h1>;\n```\n\nOverall, React is powerful, scalable, and widely used across the web industry. Whether you're building a small widget or a large application, React provides the tools to do it efficiently",
+    "category": "Frontend",
+    "date": "2024-09-01T00:00:00Z"
+  },
+  {
+    "id": "2",
+    "title": "Understanding REST APIs",
+    "excerpt": "Learn how REST APIs work and how to consume them.",
+    "content": "REST APIs are a standard for communication between client and server. This blog will cover...",
+    "category": "Backend",
+    "date": "2024-08-12T00:00:00Z"
+  },
+  {
+    "id": "3",
+    "title": "Why Firebase is Great for Web Apps",
+    "excerpt": "Explore Firebase features for web development like Firestore, Auth, and Hosting.",
+    "content": "Firebase is a powerful platform for web and mobile apps. In this post, we’ll look at Firestore, Firebase Auth, and more...",
+    "category": "Tech",
+    "date": "2024-07-21T00:00:00Z"
+  },
+  {
+    "id": "4",
+    "title": "Deploy Your Website with Vercel",
+    "excerpt": "Simple guide to deploying frontend projects using Vercel.",
+    "content": "Vercel is an easy-to-use platform to host your frontend apps. Let's go through step-by-step deployment...",
+    "category": "Frontend",
+    "date": "2024-07-30T00:00:00Z"
+  },
+  {
+    "id": "5",
+    "title": "Node.js Basics for Beginners",
+    "excerpt": "Understand the fundamentals of Node.js and server-side JavaScript.",
+    "content": "Node.js lets you run JavaScript on the server. This article introduces you to core modules, npm, and creating a basic server...",
+    "category": "Backend",
+    "date": "2024-09-15T00:00:00Z"
+  }
+]

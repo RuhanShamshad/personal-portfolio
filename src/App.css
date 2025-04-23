@@ -551,3 +551,58 @@ button[type="submit"]:hover {
   color: #cccccc;
   font-size: 1.1rem;
 }
+.post-detail {
+  width: 100%;
+  margin-top: 501px;
+  display: inline-grid;
+}
+.post-detail {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1rem;
+  background: linear-gradient(145deg, #102030, #203040);
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-top: 56px;
+}
+
+.post-detail .content {
+  max-width: 800px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.post-detail h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #00d8ff;
+}
+
+.post-detail p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.post-detail strong {
+  color: #ffd700;
+}
+
+.post-detail em {
+  color: #ccc;
+  display: block;
+  margin-top: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
