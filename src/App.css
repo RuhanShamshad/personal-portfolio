@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 }
 
 .App-logo {
@@ -90,13 +91,13 @@
   display: inline-block;
   margin-top: 10px;
   padding: 5px 10px;
-  background-color: #0073e6;
+  /* background-color: #0073e6; */
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .project-card a:hover {
-  background-color: #005bb5; /* Hover effect on GitHub link */
+  /* background-color: #005bb5;  */
   color: #fff;
 }
 
@@ -316,10 +317,10 @@
 
 #contact {
   max-width: 700px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
+  margin: 10px 5px 0 650px;
+  padding: 5rem 10.5rem;
   background-color: #f9f9f9;
-  border-radius: 1rem;
+  border-radius: 20rem;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -398,4 +399,155 @@ button[type="submit"]:hover {
     font-size: 1rem;
     padding: 0.8rem 1.2rem;
   }
+}
+.projects-scroll {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.project-card h3 a {
+  color: #00bcd4;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-card h3 a:hover {
+  color: #0097a7;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #dddddd;
+}
+.blog {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+}
+
+.blog-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+/* Categories Filter */
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.category-btn {
+  background: transparent;
+  border: 2px solid #00bcd4;
+  color: #00bcd4;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover,
+.category-btn.active {
+  background: #00bcd4;
+  color: #fff;
+}
+
+/* Blog posts */
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.post-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.post-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.post-title {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.post-excerpt {
+  font-size: 1rem;
+  color: #dddddd;
+  margin-bottom: 1rem;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.read-more-link {
+  color: #00bcd4;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.read-more-link:hover {
+  color: #0097a7;
+}
+
+.no-posts {
+  text-align: center;
+  color: #cccccc;
+  font-size: 1.1rem;
 }

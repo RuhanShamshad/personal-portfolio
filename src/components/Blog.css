@@ -1,8 +1,8 @@
-.blog {
+/* .blog {
   padding: 5rem;
   max-width: 800px;
   margin: auto;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .blog-title {
@@ -85,4 +85,334 @@
   text-align: center;
   font-size: 1.1rem;
   color: #999;
+}
+.contact-bg {
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #1e3c72, #2a5298);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.contact-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  color: white;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #ffffff;
+  color: #1e3c72;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e3e3e3;
+  transform: scale(1.05);
+}
+.contact-bg-mouse {
+  background: radial-gradient(
+    circle at center,
+    #1e3c72,
+    #2a5298,
+    #1e3c72,
+    #000
+  );
+  background-size: 200% 200%;
+  transition: background-position 0.1s ease;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.contact-container {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  color: white;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #333;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #fff;
+  color: #1e3c72;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e3e3e3;
+  transform: scale(1.05);
+}
+.contact-bg-mouse {
+  background: radial-gradient(
+    circle at center,
+    #1e3c72,
+    #2a5298,
+    #1e3c72,
+    #000
+  );
+  background-size: 200% 200%;
+  transition: background-position 0.1s ease;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 80px; 
+  box-sizing: border-box;
+}
+
+
+.contact-container {
+  background-color: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  color: white;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  margin-bottom: 60px;
+}
+
+
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+.contact-bg-mouse {
+  background: radial-gradient(circle at center, #1e3c72, #2a5298, #1e3c72);
+  background-size: 200% 200%;
+  transition: background-position 0.1s ease;
+  min-height: 100vh;
+  padding: 100px 20px 100px; 
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+.contact-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+
+form label {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #ffffff;
+  color: #1e3c72;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #f0f0f0;
+}
+
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+} */
+/* .contact-bg-mouse {
+  display: flex;
+}
+.contact-container {
+  width: 50%;
+  margin-top: 75px;
+} */
+/* Background movement effect container */
+.contact-bg-mouse {
+  min-height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 25px;
+}
+
+/* Header section */
+.contact-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-container h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.contact-container p {
+  font-size: 1.1rem;
+  color: #dddddd;
+}
+
+/* Form section */
+.container-2 {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Form elements */
+form input,
+form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #cccccc;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Submit button */
+form button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #00bcd4;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0097a7;
 }

@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import logo from "../images/portfolio-logo-removebg-preview.png";
 
 function Navbar() {
   return (
     <div className="navbar">
+      <div className="nav-logo">
+        <img src={logo} alt="Loading..." className="logo" />
+      </div>
       <ul className="navbar-list">
         <li>
           <Link to="/" className="navbar-link">
